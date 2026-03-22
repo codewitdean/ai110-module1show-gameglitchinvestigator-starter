@@ -17,7 +17,7 @@ The game looked complete, the UI was well developed no errors in the wording or 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)? 
 Claude 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-Hard difficulty secret out of range ✅
+Hard difficulty secret out of range ✅.
 app.py:136 — new game hardcodes random.randint(1, 100) instead of using the difficulty range. Hard's range is 1–50, so a secret of 61 is possible after clicking New Game.
 I clicked on hard difficult and realized it was true.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).Hard difficulty range is wrong (Logic Bug)
